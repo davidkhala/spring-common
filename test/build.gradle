@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'org.davidkhala'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 
 repositories {
     mavenCentral()
@@ -15,7 +15,8 @@ dependencies {
     api 'org.springframework.boot:spring-boot-devtools:latest.release'
     api 'org.springframework.boot:spring-boot-starter-test:latest.release'
     api 'org.junit.platform:junit-platform-launcher:latest.release'
-    api platform('org.testcontainers:testcontainers-bom:latest.release')
+    // test containers for spring
+    api 'org.springframework.boot:spring-boot-testcontainers:latest.release'
 }
 
 publishing {
