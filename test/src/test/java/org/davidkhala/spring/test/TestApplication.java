@@ -1,4 +1,4 @@
-package org.davidkhala.test;
+package org.davidkhala.spring.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
