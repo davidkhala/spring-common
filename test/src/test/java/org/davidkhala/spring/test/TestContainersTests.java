@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Testcontainers
-class TestApplicationTests {
+class TestContainersTests {
 
     static int port = 7687;
     @Container
@@ -39,9 +39,6 @@ class TestApplicationTests {
         assertEquals("neo4j", tokenValues.get("principal").asString());
         assertEquals("basic", tokenValues.get("scheme").asString());
         assertEquals("password", tokenValues.get("credentials").asString());
-
-
-
 
     }
 
